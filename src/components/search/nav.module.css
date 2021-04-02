@@ -1,0 +1,137 @@
+/* nav */
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.logo_wrap {
+  flex-shrink: 0;
+  flex-basis: 185px;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+.icons_wrap {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_wrap {
+  flex-grow: 1;
+}
+.search_wrap.hide {
+  display: none;
+}
+.search_wrap.show {
+  display: block;
+}
+.bar {
+  transition: transform 0.3s ease-in-out;
+  margin-right: 30px;
+}
+.bar:hover {
+  transform: scale(1.2);
+}
+.logo {
+  width: 99.3916px;
+  height: 23.716px;
+  cursor: pointer;
+}
+.search_bar {
+  width: 240px;
+  height: 34px;
+  border-radius: 22px;
+  padding: 0 20px;
+  background-color: rgba(211, 211, 211, 0.3);
+  color: rgb(44, 44, 44);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.search_bar:focus {
+  background-color: rgba(211, 211, 211, 0.2);
+}
+.search_btn {
+  font-size: 23px;
+  outline: none;
+  border: none;
+  background-color: unset;
+  margin-left: 20px;
+  color: rgb(44, 44, 44);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search_btn:hover {
+  color: #ff0000;
+  transform: scale(1.3);
+}
+.profile_icons {
+  flex-basis: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  color: rgba(178, 178, 178, 1);
+}
+.profile_icons.show {
+  display: flex;
+}
+.profile_icons.hide {
+  display: none;
+}
+.profile_icons li {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.profile_icons li:hover {
+  transform: scale(1.3);
+}
+
+@media all and (max-width: 768px) {
+  .profile_icons {
+    display: none;
+  }
+
+  .search_bar {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .nav {
+    margin: 0 20px;
+    height: 60px;
+  }
+  .logo_wrap {
+    flex-shrink: 0;
+    flex-basis: 100px;
+  }
+  .bar {
+    font-size: 1.2rem;
+    margin-right: 15px;
+  }
+  .logo {
+    width: 77.63496px;
+    height: 18.2296px;
+  }
+  .search_bar {
+    width: 90%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+  }
+  .search_btn {
+    display: none;
+  }
+}

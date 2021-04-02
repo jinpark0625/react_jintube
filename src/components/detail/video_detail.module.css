@@ -1,0 +1,214 @@
+/* .video {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+} */
+.detail {
+  padding: 0.2em;
+}
+.video_container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video_container iframe,
+.video_container object,
+.video_container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.description {
+  white-space: pre-wrap;
+}
+.title_part_wrap {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.fc {
+  width: 80%;
+}
+.sc {
+  width: 20%;
+  margin-left: 25px;
+}
+.detail_title {
+  font-size: 1.238rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: rgb(44, 44, 44);
+}
+.detail_title p {
+  color: rgb(133, 133, 133);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.like_icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.like_icons li {
+  cursor: pointer;
+  color: rgba(178, 178, 178, 1);
+  transition: color 0.3s ease-in-out;
+}
+.like_icons li svg {
+  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.lastIcon {
+  margin-right: 0px;
+}
+.like_icons li:hover {
+  color: #ff0000;
+}
+.channel_desc_wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+.channel_desc_wrap li:first-child {
+  width: 48px;
+}
+.channel_img {
+  width: 100%;
+}
+.channel_img img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.channel_desc_wrap li:nth-child(2) {
+  width: 75%;
+  margin: 0 1.5%;
+}
+.channel_name {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(44, 44, 44);
+}
+.published_date {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(178, 178, 178, 1);
+}
+.channel_info {
+  display: block;
+  margin-top: 10px;
+  height: auto;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: rgb(44, 44, 44);
+  overflow: hidden;
+}
+.channel_info.more {
+  height: auto;
+}
+.seeMore {
+  overflow: visible;
+  height: auto;
+}
+.more_btn {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.more_btn:hover {
+  color: #fff;
+  background-color: #ff0000;
+}
+.channel_desc_wrap li:last-child {
+  flex-grow: 1;
+}
+.subscribe_btn {
+  background-color: #ff0000;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1vw;
+}
+.subscribe_btn:hover {
+  background-color: #b40202;
+}
+
+@media all and (max-width: 768px) {
+  .title_part_wrap {
+    flex-wrap: wrap;
+  }
+  .fc {
+    width: 100%;
+  }
+  .sc {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .detail_title {
+    font-size: 1.098rem;
+    line-height: 1.5;
+  }
+  .like_icons {
+    justify-content: flex-end;
+  }
+  .like_icons li svg {
+    margin-right: 15px;
+  }
+  .channel_desc_wrap {
+    justify-content: flex-end;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+  .channel_desc_wrap li:first-child {
+    width: 36px;
+  }
+  .channel_img img {
+    width: 36px;
+    height: 36px;
+  }
+  .channel_desc_wrap li:nth-child(2) {
+    width: calc(100% - 51px);
+    margin: 0 0 0 15px;
+  }
+  .channel_desc_wrap li:last-child {
+    width: 200px;
+    flex-grow: 0;
+    margin-top: 20px;
+  }
+  .subscribe_btn {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .detail_title {
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+  .like_icons li svg {
+    font-size: 16px;
+  }
+  .channel_desc_wrap li:last-child {
+    width: 130px;
+  }
+}
