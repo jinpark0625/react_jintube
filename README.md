@@ -6,8 +6,8 @@ React를 이용한 youtube clone 사이트입니다.
 
 
 ###검색
+![Uploading 검색.gif…]()
 
-![검색](https://user-images.githubusercontent.com/69961780/113404408-1428a780-93e3-11eb-8ced-d3b5229682dc.gif)
 
 
 ###비디오 실행
