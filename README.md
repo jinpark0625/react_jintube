@@ -29,3 +29,6 @@ Structure
 #### 1. 비디오 리스트 (VideoList)
 #### 2. 비디오 아이템 (VideoItem)
 #### 3. 비디오 디테일 (VideoDetail)
+
+
+[링크](https://6066e0e1c54c8d489abd1669--jintube.netlify.app/)
