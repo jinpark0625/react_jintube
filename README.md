@@ -19,7 +19,6 @@ Structure
 ------------
 
 ### Global
-<br/>
 #### 1. 홈 (Main)
 #### 2. 사이드메뉴 (Aside)
 #### 3. 검색 (Search)
