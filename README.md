@@ -31,4 +31,4 @@ Structure
 #### 3. 비디오 디테일 (VideoDetail)
 
 
-[링크](https://6066e0e1c54c8d489abd1669--jintube.netlify.app/)
+[바로보기 링크](https://6066e0e1c54c8d489abd1669--jintube.netlify.app/)
